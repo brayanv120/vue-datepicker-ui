@@ -477,6 +477,7 @@ export default {
   position: absolute;
   top: 56px;
   z-index: 99999;
+  flex-direction: column;
 }
 
 .v-calendar .input-field {
@@ -522,7 +523,7 @@ export default {
   padding-right: 20px;
   font-size: var(--v-calendar-input-font-size);
   min-width: inherit;
-  height: 50px;
+  height: 56px;
   border-radius: 6px;
   border: var(--v-calendar-input-border);
   background-color: var(--v-calendar-input-bg-color);
