@@ -466,8 +466,7 @@ export default {
 .v-calendar {
   position: relative;
   width: max-content;
-  min-width: max-content;
-  min-width: 100%;
+  width: 100%;
 }
 
 .v-calendar .content {
@@ -477,14 +476,14 @@ export default {
   position: absolute;
   top: 56px;
   z-index: 99999;
-  min-width: 100%;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: row;
 }
 
 .v-calendar .input-field {
   display: flex;
   position: relative;
-  min-width: 100%;
+  width: 100%;
   font-weight: var(--v-calendar-input-font-weight);
 }
 
@@ -529,7 +528,7 @@ export default {
   background-color: var(--v-calendar-input-bg-color);
   color: var(--v-calendar-input-text-color);
   font-weight: inherit;
-  min-width: calc(100% - 1px);
+  width: 100%;
 }
 
 .v-calendar .input-field input:disabled {
@@ -840,6 +839,8 @@ export default {
 }
 
 @media only screen and (max-width: 1339px) {
-
+.v-calendar .content{
+  flex-direction: row;
+}
 }
 </style>
