@@ -465,9 +465,9 @@ export default {
 
 .v-calendar {
   position: relative;
-  width: 100%;
   width: max-content;
   min-width: max-content;
+  min-width: 100%;
 }
 
 .v-calendar .content {
@@ -477,13 +477,14 @@ export default {
   position: absolute;
   top: 56px;
   z-index: 99999;
+  min-width: 100%;
   flex-direction: column;
 }
 
 .v-calendar .input-field {
   display: flex;
   position: relative;
-  min-width: 140px;
+  min-width: 100%;
   font-weight: var(--v-calendar-input-font-weight);
 }
 
@@ -522,13 +523,13 @@ export default {
   padding-left: 40px;
   padding-right: 20px;
   font-size: var(--v-calendar-input-font-size);
-  min-width: inherit;
   height: 56px;
-  border-radius: 6px;
+  border-radius: 16px;
   border: var(--v-calendar-input-border);
   background-color: var(--v-calendar-input-bg-color);
   color: var(--v-calendar-input-text-color);
   font-weight: inherit;
+  min-width: calc(100% - 1px);
 }
 
 .v-calendar .input-field input:disabled {
@@ -836,5 +837,9 @@ export default {
   border-bottom-left-radius: var(--v-calendar-content-radius);
   border-bottom-right-radius: var(--v-calendar-content-radius);
   border-top-right-radius: var(--v-calendar-content-radius);
+}
+
+@media only screen and (max-width: 1339px) {
+
 }
 </style>
