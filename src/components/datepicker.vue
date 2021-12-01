@@ -670,7 +670,7 @@ body.dark .sorting__open .icon {
 
 .v-calendar .calendar .days {
   display: grid;
-  grid-template-columns: repeat(7, minmax(max-content, 0.9fr));
+  grid-template-columns: repeat(7, minmax(max-content, 0.8fr));
 }
 
 .v-calendar .calendar .years,
@@ -738,7 +738,8 @@ body.dark .sorting__open .icon {
   display: flex;
   justify-content: center;
   text-align: left;
-  
+  align-self: center;
+  justify-self: center;
 }
 
 .v-calendar .calendar .days .day .number {
