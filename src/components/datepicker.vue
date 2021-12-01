@@ -538,7 +538,7 @@ body.dark .sorting__open .icon {
   position: absolute;
   top: 56px;
   z-index: 99999;
-  min-width: 100%;
+  width: auto;
   flex-direction: row;
 }
 
@@ -670,7 +670,7 @@ body.dark .sorting__open .icon {
 
 .v-calendar .calendar .days {
   display: grid;
-  grid-template-columns: repeat(7, minmax(max-content, 1fr));
+  grid-template-columns: repeat(7, minmax(max-content, 0.9fr));
 }
 
 .v-calendar .calendar .years,
@@ -738,6 +738,7 @@ body.dark .sorting__open .icon {
   display: flex;
   justify-content: center;
   text-align: left;
+  
 }
 
 .v-calendar .calendar .days .day .number {
