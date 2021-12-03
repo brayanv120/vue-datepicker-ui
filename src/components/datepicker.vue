@@ -424,13 +424,13 @@ export default {
   --v-calendar-view-button-color: #7b8187;
   --v-calendar-view-button-font-weight: 600;
   --v-calendar-view-button-font-size: 1rem;
-  --v-calendar-datepicker-icon-color: #1bba67;
+  --v-calendar-datepicker-icon-color: #fff;
   --v-calendar-datepicker-icon-size: 1.1rem;
-  --v-calendar-active-bg-color: #1bba67;
+  --v-calendar-active-bg-color: #fff;
   --v-calendar-active-text-color: #fff;
   --v-calendar-range-bg-color: #edfff9;
   --v-calendar-range-text-color: #7b8187;
-  --v-calendar-range-radius: 100%;
+  --v-calendar-range-radius: none;
   --v-calendar-day-hover-bg-color: #eaeaeb;
   --v-calendar-day-width: 25px;
   --v-calendar-day-height: 25px;
@@ -443,7 +443,7 @@ export default {
   --v-calendar-input-text-color: #7b8187;
   --v-calendar-input-font-size: 0.9rem;
   --v-calendar-input-font-weight: 600;
-  --v-calendar-content-radius: 0px;
+  --v-calendar-content-radius: none;
   --v-calendar-year-font-size: 1.1rem;
   --v-calendar-year-color: #7b8187;
   --v-calendar-year-font-weight: 600;
@@ -469,7 +469,7 @@ body.dark{
   --v-calendar-input-text-disable-color: #b8b8b9;
   --v-calendar-select-bg-color: #242731;
   --v-calendar-border-color: #eaeaeb;
-  --v-calendar-triangle-color: #fff;
+  --v-calendar-triangle-color: rgba(228, 228, 228, 0.1);
   --v-calendar-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
   --v-calendar-top-shadow: 3px -14px 30px 0px rgba(0, 0, 0, 0.2);
   --v-calendar-text-color: #fff;
@@ -482,9 +482,9 @@ body.dark{
   --v-calendar-datepicker-icon-size: 1.1rem;
   --v-calendar-active-bg-color: #6C5DD3;
   --v-calendar-active-text-color: #fff;
-  --v-calendar-range-bg-color: #edfff9;
-  --v-calendar-range-text-color: rgba(255, 255, 255, 0.301);
-  --v-calendar-range-radius: 100%;
+  --v-calendar-range-bg-color: #6c5dd366;
+  --v-calendar-range-text-color: #fff;
+  --v-calendar-range-radius: none;
   --v-calendar-day-hover-bg-color: #3F8CFF;
   --v-calendar-day-width: 25px;
   --v-calendar-day-height: 25px;
@@ -497,7 +497,7 @@ body.dark{
   --v-calendar-input-text-color: #7b8187;
   --v-calendar-input-font-size: 0.9rem;
   --v-calendar-input-font-weight: 600;
-  --v-calendar-content-radius: 0px;
+  --v-calendar-content-radius: none;
   --v-calendar-year-font-size: 1.1rem;
   --v-calendar-year-color: #fff;
   --v-calendar-year-font-weight: 600;
@@ -594,6 +594,7 @@ body.dark .sorting__open .icon {
   z-index: 99999;
   width: auto;
   flex-direction: row;
+  border: 1px solid rgba(228, 228, 228, 0.1);
 }
 
 .v-calendar .input-field {
