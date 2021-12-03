@@ -414,7 +414,7 @@ export default {
   --v-calendar-input-bg-disable-color: rgb(245, 245, 245);
   --v-calendar-input-text-disable-color: #b8b8b9;
   --v-calendar-select-bg-color: #fff;
-  --v-calendar-border-color: #eaeaeb;
+  --v-calendar-border-color: none;
   --v-calendar-triangle-color: #eaeaeb;
   --v-calendar-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
   --v-calendar-top-shadow: 3px -14px 30px 0px rgba(0, 0, 0, 0.2);
@@ -424,7 +424,7 @@ export default {
   --v-calendar-view-button-color: #7b8187;
   --v-calendar-view-button-font-weight: 600;
   --v-calendar-view-button-font-size: 1rem;
-  --v-calendar-datepicker-icon-color: #fff;
+  --v-calendar-datepicker-icon-color: #11142d;
   --v-calendar-datepicker-icon-size: 1.1rem;
   --v-calendar-active-bg-color: #fff;
   --v-calendar-active-text-color: #fff;
@@ -468,7 +468,7 @@ body.dark{
   --v-calendar-input-bg-disable-color: rgb(245, 245, 245);
   --v-calendar-input-text-disable-color: #b8b8b9;
   --v-calendar-select-bg-color: #242731;
-  --v-calendar-border-color: #eaeaeb;
+  --v-calendar-border-color: none;
   --v-calendar-triangle-color: rgba(228, 228, 228, 0.1);
   --v-calendar-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
   --v-calendar-top-shadow: 3px -14px 30px 0px rgba(0, 0, 0, 0.2);
