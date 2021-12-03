@@ -462,6 +462,60 @@ export default {
   --v-calendar-month-border-radius: none;
 }
 
+body.dark{
+  --v-calendar-picker-color: #242731;
+  --v-calendar-input-bg-color: #fff;
+  --v-calendar-input-bg-disable-color: rgb(245, 245, 245);
+  --v-calendar-input-text-disable-color: #b8b8b9;
+  --v-calendar-select-bg-color: #242731;
+  --v-calendar-border-color: #eaeaeb;
+  --v-calendar-triangle-color: #fff;
+  --v-calendar-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  --v-calendar-top-shadow: 3px -14px 30px 0px rgba(0, 0, 0, 0.2);
+  --v-calendar-text-color: #fff;
+  --v-calendar-action-color: #fff;
+  --v-calendar-text-disabled-color: #b8b8b9;
+  --v-calendar-view-button-color: #fff;
+  --v-calendar-view-button-font-weight: 600;
+  --v-calendar-view-button-font-size: 1rem;
+  --v-calendar-datepicker-icon-color: #fff;
+  --v-calendar-datepicker-icon-size: 1.1rem;
+  --v-calendar-active-bg-color: #6C5DD3;
+  --v-calendar-active-text-color: #fff;
+  --v-calendar-range-bg-color: #edfff9;
+  --v-calendar-range-text-color: rgba(255, 255, 255, 0.301);
+  --v-calendar-range-radius: 100%;
+  --v-calendar-day-hover-bg-color: #3F8CFF;
+  --v-calendar-day-width: 25px;
+  --v-calendar-day-height: 25px;
+  --v-calendar-day-font-size: 0.9rem;
+  --v-calendar-day-font-weight: 600;
+  --v-calendar-day-name-font-size: 0.9rem;
+  --v-calendar-day-name-font-weight: 600;
+  --v-calendar-day-name-color: #fff;
+  --v-calendar-input-border: 1px solid #eaeaeb;
+  --v-calendar-input-text-color: #7b8187;
+  --v-calendar-input-font-size: 0.9rem;
+  --v-calendar-input-font-weight: 600;
+  --v-calendar-content-radius: 0px;
+  --v-calendar-year-font-size: 1.1rem;
+  --v-calendar-year-color: #fff;
+  --v-calendar-year-font-weight: 600;
+  --v-calendar-year-disabled-color: #b8b8b9;
+  --v-calendar-year-disabled-bg-color: transparent;
+  --v-calendar-year-padding: 10px;
+  --v-calendar-year-border: none;
+  --v-calendar-year-border-radius: none;
+  --v-calendar-month-font-size: 1.1rem;
+  --v-calendar-month-color: #fff;
+  --v-calendar-month-font-weight: 600;
+  --v-calendar-month-disabled-color: #b8b8b9;
+  --v-calendar-month-disabled-bg-color: transparent;
+  --v-calendar-month-padding: 8px;
+  --v-calendar-month-border: none;
+  --v-calendar-month-border-radius: none;
+}
+
 .sorting__input {
   width: 100%;
   height: 56px;
