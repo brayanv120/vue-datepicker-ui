@@ -426,8 +426,8 @@ export default {
   --v-calendar-view-button-font-size: 1rem;
   --v-calendar-datepicker-icon-color: #11142d;
   --v-calendar-datepicker-icon-size: 1.1rem;
-  --v-calendar-active-bg-color: #fff;
-  --v-calendar-active-text-color: #fff;
+  --v-calendar-active-bg-color: #eaeaeb;
+  --v-calendar-active-text-color: #7b8187;
   --v-calendar-range-bg-color: #edfff9;
   --v-calendar-range-text-color: #7b8187;
   --v-calendar-range-radius: none;
