@@ -463,7 +463,7 @@ export default {
 }
 
 body.dark{
-  --v-calendar-picker-color: #fff;
+  --v-calendar-picker-color: #242731;
   --v-calendar-input-bg-color: #fff;
   --v-calendar-input-bg-disable-color: rgb(245, 245, 245);
   --v-calendar-input-text-disable-color: #b8b8b9;
