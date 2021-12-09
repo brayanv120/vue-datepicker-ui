@@ -3,7 +3,7 @@
     <div class="input-field" :class="{ long: range }">
       <input
         type="text"
-        class="sorting__input"
+        class="input"
         :class="[inputClass]"
         :placeholder="placeholder"
         @click="isShowPicker = !isShowPicker"
@@ -11,20 +11,6 @@
         :value="formattedValue"
         readonly
       />
-      <button class="sorting__open">
-        <svg
-          class="datepicker"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-        >
-          <path
-            d="M10 12h4v4h-4zM16 12h4v4h-4zM22 12h4v4h-4zM4 24h4v4h-4zM10 24h4v4h-4zM16 24h4v4h-4zM10 18h4v4h-4zM16 18h4v4h-4zM22 18h4v4h-4zM4 18h4v4h-4zM26 0v2h-4v-2h-14v2h-4v-2h-4v32h30v-32h-4zM28 30h-26v-22h26v22z"
-          ></path>
-        </svg>
-      </button>
       <button
         v-if="showClearButton && selectedDate"
         type="button"
@@ -462,112 +448,28 @@ export default {
   --v-calendar-month-border-radius: none;
 }
 
-body.dark{
-  --v-calendar-picker-color: #242731;
-  --v-calendar-input-bg-color: #fff;
-  --v-calendar-input-bg-disable-color: rgb(245, 245, 245);
-  --v-calendar-input-text-disable-color: #b8b8b9;
-  --v-calendar-select-bg-color: #242731;
-  --v-calendar-border-color: none;
-  --v-calendar-triangle-color: rgba(228, 228, 228, 0.1);
-  --v-calendar-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
-  --v-calendar-top-shadow: 3px -14px 30px 0px rgba(0, 0, 0, 0.2);
-  --v-calendar-text-color: #fff;
-  --v-calendar-action-color: #fff;
-  --v-calendar-text-disabled-color: #b8b8b9;
-  --v-calendar-view-button-color: #fff;
-  --v-calendar-view-button-font-weight: 600;
-  --v-calendar-view-button-font-size: 1rem;
-  --v-calendar-datepicker-icon-color: #fff;
-  --v-calendar-datepicker-icon-size: 1.1rem;
-  --v-calendar-active-bg-color: #6C5DD3;
-  --v-calendar-active-text-color: #fff;
-  --v-calendar-range-bg-color: #6c5dd366;
-  --v-calendar-range-text-color: #fff;
-  --v-calendar-range-radius: none;
-  --v-calendar-day-hover-bg-color: #3F8CFF;
-  --v-calendar-day-width: 25px;
-  --v-calendar-day-height: 25px;
-  --v-calendar-day-font-size: 0.9rem;
-  --v-calendar-day-font-weight: 600;
-  --v-calendar-day-name-font-size: 0.9rem;
-  --v-calendar-day-name-font-weight: 600;
-  --v-calendar-day-name-color: #fff;
-  --v-calendar-input-border: 1px solid #eaeaeb;
-  --v-calendar-input-text-color: #7b8187;
-  --v-calendar-input-font-size: 0.9rem;
-  --v-calendar-input-font-weight: 600;
-  --v-calendar-content-radius: none;
-  --v-calendar-year-font-size: 1.1rem;
-  --v-calendar-year-color: #fff;
-  --v-calendar-year-font-weight: 600;
-  --v-calendar-year-disabled-color: #b8b8b9;
-  --v-calendar-year-disabled-bg-color: transparent;
-  --v-calendar-year-padding: 10px;
-  --v-calendar-year-border: none;
-  --v-calendar-year-border-radius: none;
-  --v-calendar-month-font-size: 1.1rem;
-  --v-calendar-month-color: #fff;
-  --v-calendar-month-font-weight: 600;
-  --v-calendar-month-disabled-color: #b8b8b9;
-  --v-calendar-month-disabled-bg-color: transparent;
-  --v-calendar-month-padding: 8px;
-  --v-calendar-month-border: none;
-  --v-calendar-month-border-radius: none;
-}
-
-.sorting__input {
-  width: 100%;
-  height: 56px;
-  padding: 0 20px 0 55px;
+.input {
   border: none;
-  border-radius: 16px;
-  background: rgba(228, 228, 228, 0.2);
-  font-size: 14px;
-  font-weight: 600;
-  color: #1b1d21;
+  background: none;
+  border-radius: 0;
+  font-size: 1.25em;
+  padding: 0;
+  border-bottom: #f3f3f3 2px solid;
+  width: 100%;
+  color: #202046;
 }
 
-.sorting__input::-webkit-input-placeholder {
-  color: #808191;
+.input::placeholder {
+  font-weight: 400;
+  font-size: 0.75em;
+  line-height: 1em;
 }
-
-.sorting__input::-ms-input-placeholder {
-  color: #808191;
-}
-
-.sorting__input::placeholder {
-  color: #808191;
-}
-
-body.dark .sorting__input {
-  background: rgba(228, 228, 228, 0.04);
-  color: #ffffff;
-}
-
-.sorting__open {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 55px;
-  font-size: 0;
-}
-
-.sorting__open .icon {
-  font-size: 20px;
-  fill: #11142d;
-  -webkit-transition: fill 0.25s;
-  -o-transition: fill 0.25s;
-  transition: fill 0.25s;
-}
-
-.sorting__open:hover .icon {
-  fill: #6c5dd3;
-}
-
-body.dark .sorting__open .icon {
-  fill: #ffffff;
+.input:focus {
+  border: none;
+  border-bottom: #f3f3f3 2px solid;
+  box-shadow: none;
+  color: #202046;
+  outline: none;
 }
 
 .v-calendar *:focus {
@@ -953,102 +855,6 @@ body.dark .sorting__open .icon {
 @media only screen and (max-width: 900px) {
   .v-calendar .content {
     flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .sorting__line .sorting__search {
-    margin: 0 0 16px;
-  }
-
-  .sorting__search {
-    position: relative;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-
-  .sorting__line .sorting__search {
-    margin-right: 45px;
-  }
-
-  .sorting__open {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 55px;
-    font-size: 0;
-  }
-
-  .sorting__open .icon {
-    font-size: 20px;
-    fill: #11142d;
-    -webkit-transition: fill 0.25s;
-    -o-transition: fill 0.25s;
-    transition: fill 0.25s;
-  }
-
-  .sorting__open:hover .icon {
-    fill: #6c5dd3;
-  }
-
-  body.dark .sorting__open .icon {
-    fill: #ffffff;
-  }
-
-  .sorting__input {
-    width: 100%;
-    height: 56px;
-    padding: 0 20px 0 55px;
-    border: none;
-    border-radius: 16px;
-    background: rgba(228, 228, 228, 0.2);
-    font-size: 14px;
-    font-weight: 600;
-    color: #1b1d21;
-  }
-
-  .sorting__input::-webkit-input-placeholder {
-    color: #808191;
-  }
-
-  .sorting__input::-ms-input-placeholder {
-    color: #808191;
-  }
-
-  .sorting__input::placeholder {
-    color: #808191;
-  }
-
-  body.dark .sorting__input {
-    background: rgba(228, 228, 228, 0.04);
-    color: #ffffff;
-  }
-
-  .sorting__open {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 55px;
-    font-size: 0;
-  }
-
-  .sorting__open .icon {
-    font-size: 20px;
-    fill: #11142d;
-    -webkit-transition: fill 0.25s;
-    -o-transition: fill 0.25s;
-    transition: fill 0.25s;
-  }
-
-  .sorting__open:hover .icon {
-    fill: #6c5dd3;
-  }
-
-  body.dark .sorting__open .icon {
-    fill: #ffffff;
   }
 }
 </style>
